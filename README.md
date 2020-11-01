@@ -22,3 +22,7 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+### Demo
+[Preview](https://eru123.github.io/pepe/mangareader)
+### Download Builds
+Main - [Download](https://eru123.github.io/pepe/mangareader/pepe-mangareader.apk)
