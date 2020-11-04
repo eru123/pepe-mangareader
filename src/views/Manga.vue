@@ -1,11 +1,10 @@
 <template>
   <v-app>
-    <Nav />
+    <Nav :title="manga.title" />
     <v-main app>
       <Loader :loading="loading" message="Getting Manga information" />
       <Error :error="error" message="Can't find Manga. Retry" />
       <v-container v-if="!loading && !error">
-        <h3>{{ manga.title }}</h3>
         <p>Genre: {{ manga.genre }}</p>
         <p class="my-3" color="gray">Description: {{ manga.description }}</p>
         <v-subheader>Chapters ({{ manga.chapters.length || 0 }})</v-subheader>
@@ -54,6 +53,7 @@ export default {
       })
       .finally(() => {
         this.loading = false;
+        this.manga.chapters.reverse();
       });
   },
   components: {

@@ -7,11 +7,6 @@
         link
         @click="$router.push('/manga/' + r.code)"
       >
-        <v-list-item-avatar>
-          <v-avatar color="primary" size="48">
-            <span class="white--text headline">{{ i + 1 }}</span>
-          </v-avatar>
-        </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-title>{{ r.title || "" }}</v-list-item-title>
         </v-list-item-content>

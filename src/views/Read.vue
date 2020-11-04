@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Nav />
+    <Nav :title="title" />
     <v-main app>
       <Loader :loading="loading" message="Getting image list" />
       <Error :error="error" message="Failed to fetch image list. Retry" />
@@ -38,8 +38,14 @@ export default {
     return {
       loading: true,
       error: false,
-      list: []
+      list: [],
+      chapter: this.$router.currentRoute.params.chapter || 1
     };
+  },
+  computed: {
+    title() {
+      return "Chapter " + this.chapter;
+    }
   },
   created() {
     this.loading = true;

@@ -5,6 +5,7 @@
       placeholder="Search"
       autocomplete="off"
       v-model="query"
+      @submit.prevent="search"
     ></v-text-field>
     <v-btn icon link @click="search"><v-icon>mdi-magnify</v-icon></v-btn>
   </v-app-bar>

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Nav />
+    <Nav title="Search" />
     <v-main>
       <Loader :loading="loading" :message="`Searching for '${query}'`" />
       <v-container fluid v-if="!loading">
