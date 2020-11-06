@@ -1,5 +1,5 @@
 {
-  "appId": "com.skidd.mangareader",
+  "appId": "com.skidd.mangaread",
   "appName": "Manga Reader",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
