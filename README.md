@@ -1,5 +1,5 @@
 # NOTICE
-This project is not maintained anymore, and there will no updates from the future.
+This project is not maintained anymore, and there will no further updates from the future.
 
 # mangareader
 
