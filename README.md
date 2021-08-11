@@ -1,3 +1,6 @@
+# NOTICE
+This project is not maintained anymore, and there will no updates from the future.
+
 # mangareader
 
 ## Project setup
